@@ -1,4 +1,4 @@
-package com.erikbalthazar.githubapiapp.ui.theme
+package com.erikbalthazar.githubapiapp.presentation.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

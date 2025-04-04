@@ -11,7 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.erikbalthazar.githubapiapp.ui.theme.GithubAPIAppTheme
+import com.erikbalthazar.githubapiapp.presentation.ui.theme.GithubAPIAppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
