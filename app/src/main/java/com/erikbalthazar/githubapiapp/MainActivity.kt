@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import com.erikbalthazar.githubapiapp.navigation.Nav
-import com.erikbalthazar.githubapiapp.presentation.ui.theme.GithubAPIAppTheme
+import com.erikbalthazar.githubapiapp.ui.theme.GithubAPIAppTheme
 
 class MainActivity : ComponentActivity() {
 

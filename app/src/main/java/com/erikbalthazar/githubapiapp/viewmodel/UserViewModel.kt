@@ -1,4 +1,4 @@
-package com.erikbalthazar.githubapiapp.presentation.presenter
+package com.erikbalthazar.githubapiapp.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

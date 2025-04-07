@@ -16,9 +16,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.erikbalthazar.githubapiapp.presentation.presenter.UserViewModel
-import com.erikbalthazar.githubapiapp.presentation.ui.components.ListItemCard
-import com.erikbalthazar.githubapiapp.presentation.ui.components.SearchBar
+import com.erikbalthazar.githubapiapp.ui.components.ListItemCard
+import com.erikbalthazar.githubapiapp.ui.components.SearchBar
+import com.erikbalthazar.githubapiapp.viewmodel.UserViewModel
 
 @Composable
 fun UserScreen(navController: NavHostController) {
