@@ -1,5 +1,6 @@
 package com.erikbalthazar.githubapiapp.ui.components
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
@@ -13,11 +14,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun ListItemCard(imageUrl: String, title: String) {
+fun UserListItemCard(imageUrl: String, title: String, onClick: () -> Unit) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .height(100.dp),
+            .height(100.dp)
+            .clickable { onClick.invoke() },
         shape = RoundedCornerShape(12.dp),
         elevation = CardDefaults.cardElevation(6.dp)
     ) {

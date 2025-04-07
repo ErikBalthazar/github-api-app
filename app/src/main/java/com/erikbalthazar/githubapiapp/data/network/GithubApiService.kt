@@ -8,9 +8,9 @@ import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface GithubApiService {
-    @GET("users")
+    @GET("search/users")
     fun getUsers(@Query("q") searchQuery: String): Call<GithubUserResponse>
 
     @GET("users/{username}/repos")
-    suspend fun getUserRepos(@Path("username") username: String): List<Repository>
+    fun getUserRepos(@Path("username") username: String): Call<List<Repository>>
 }

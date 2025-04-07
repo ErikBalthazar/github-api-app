@@ -1,5 +1,6 @@
 package com.erikbalthazar.githubapiapp
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -16,7 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.erikbalthazar.githubapiapp.ui.components.ListItemCard
+import com.erikbalthazar.githubapiapp.ui.components.UserListItemCard
 import com.erikbalthazar.githubapiapp.ui.components.SearchBar
 import com.erikbalthazar.githubapiapp.viewmodel.UserViewModel
 
@@ -51,7 +52,11 @@ fun UserScreen(navController: NavHostController) {
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             items(users) { user ->
-                ListItemCard(user.avatarUrl, user.login)
+                UserListItemCard(
+                    user.avatarUrl,
+                    user.login,
+                    onClick = { navController.navigate(route = "userRepositoryScreen/${user.login}") }
+                )
             }
         }
 
